@@ -1,14 +1,16 @@
-import './App.css'
-
-const App =() => {
-  
-
+import "./App.css";
+import { BrowserRouter, Routes, Route  } from 'react-router-dom';
+import HomePage from "./components/HomePage.jsx";
+import CoinDetail from "./components/CoinDetail";
+const App = () => {
   return (
-    <>
-      <h1>Hello React!</h1>
-       
-    </>
-  )
-}
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/coin/:coin_id/" element={<CoinDetail />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
 
-export default App
+export default App;
