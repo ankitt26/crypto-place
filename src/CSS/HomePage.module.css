@@ -1,0 +1,51 @@
+.main {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  flex-wrap: wrap;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.card {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  background-color: rgb(234, 93, 130);
+}
+
+.img {
+  width: 25%;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-bottom: -10px;
+}
+
+.detail_box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 90%;
+  border: none;
+  border-radius: 10px;
+  padding: 5%;
+}
+
+.box1 {
+  text-align: left;
+  font-family: "Lato", sans-serif;
+  color: rgb(58, 54, 54);
+}
+
+.box2 {
+  text-align: left;
+  font-family: "Lato", sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #fff;
+}
