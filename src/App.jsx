@@ -1,14 +1,11 @@
-import './App.css'
-
-const App =() => {
-  
-
+import "./App.css";
+import HomePage from "./components/HomePage.jsx";
+const App = () => {
   return (
     <>
-      <h1>Hello React!</h1>
-       
+      <HomePage />
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
