@@ -1,8 +1,10 @@
-import { Link } from 'react-router-dom';
+import { Link, useParams,} from 'react-router-dom';
 import { IoChevronBackSharp } from 'react-icons/io5';
 import styles from "../CSS/CoinDetail.module.css";
 const CoinDetail = () => {
-  return (
+  const {coin_id} = useParams();
+   console.log(coin_id);
+    return (
     <main className={styles.card} >
       <div className={styles.header}>
         <Link to="/" className={styles.back_btn}> {<IoChevronBackSharp/>} </Link>

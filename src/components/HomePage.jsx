@@ -1,11 +1,13 @@
 import Navbar from "./NavBar";
+import { Link } from "react-router-dom";
 import styles from "../CSS/HomePage.module.css";
 const HomePage = () => {
+  let coin_id = 'bitcoin';
   return (
     <>
       <Navbar />
       <main className={styles.main}>
-        <div className={styles.card}>
+        <Link className={styles.card} to={`/coin/${coin_id}`}>
           <img
             className={styles.img}
             src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579"
@@ -24,8 +26,8 @@ const HomePage = () => {
               <h5 className={styles.change}>1.3%</h5>
             </div>
           </div>
-        </div>
-        <div className={styles.card}>
+        </Link>
+        <Link className={styles.card} to={`/coin/${coin_id}`}>
           <img
             className={styles.img}
             src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579"
@@ -44,8 +46,8 @@ const HomePage = () => {
               <h5 className={styles.change}>1.3%</h5>
             </div>
           </div>
-        </div>
-        <div className={styles.card}>
+        </Link>
+        <Link className={styles.card} to={`/coin/${coin_id}`}>
           <img
             className={styles.img}
             src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579"
@@ -64,8 +66,8 @@ const HomePage = () => {
               <h5 className={styles.change}>1.3%</h5>
             </div>
           </div>
-        </div>
-        <div className={styles.card}>
+        </Link>
+        <Link className={styles.card} to={`/coin/${coin_id}`}>
           <img
             className={styles.img}
             src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579"
@@ -84,8 +86,8 @@ const HomePage = () => {
               <h5 className={styles.change}>1.3%</h5>
             </div>
           </div>
-        </div>
-        <div className={styles.card}>
+        </Link>{" "}
+        <Link className={styles.card} to={`/coin/${coin_id}`}>
           <img
             className={styles.img}
             src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579"
@@ -104,8 +106,8 @@ const HomePage = () => {
               <h5 className={styles.change}>1.3%</h5>
             </div>
           </div>
-        </div>
-        <div className={styles.card}>
+        </Link>{" "}
+        <Link className={styles.card} to={`/coin/${coin_id}`}>
           <img
             className={styles.img}
             src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579"
@@ -124,8 +126,8 @@ const HomePage = () => {
               <h5 className={styles.change}>1.3%</h5>
             </div>
           </div>
-        </div>
-        <div className={styles.card}>
+        </Link>{" "}
+        <Link className={styles.card} to={`/coin/${coin_id}`}>
           <img
             className={styles.img}
             src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579"
@@ -144,8 +146,8 @@ const HomePage = () => {
               <h5 className={styles.change}>1.3%</h5>
             </div>
           </div>
-        </div>
-        <div className={styles.card}>
+        </Link>{" "}
+        <Link className={styles.card} to={`/coin/${coin_id}`}>
           <img
             className={styles.img}
             src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579"
@@ -164,7 +166,7 @@ const HomePage = () => {
               <h5 className={styles.change}>1.3%</h5>
             </div>
           </div>
-        </div>
+        </Link>
       </main>
     </>
   );
