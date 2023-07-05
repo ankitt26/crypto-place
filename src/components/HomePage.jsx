@@ -4,7 +4,7 @@ import styles from "../CSS/HomePage.module.css";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { FetchData } from "../redux/Coins/CoinSlice";
-
+import { FaSpinner } from "react-icons/fa";
 
 const HomePage = () => {
   const dispatch = useDispatch();
@@ -15,23 +15,49 @@ const HomePage = () => {
 
   let finalData = CoinList;
 
-  if (SearchKey !== "") {
-    finalData = CoinList.filter((element) => {
-      return element.id.includes(SearchKey) || element.name.includes(SearchKey);
-    });
-
-    if (finalData.length === 0) {
-      console.log("no matched");
-    }
-  }
-
- 
-
   useEffect(() => {
     if (CoinList.length === 0) {
       dispatch(FetchData());
     }
   }, [dispatch]);
+
+  if (SearchKey !== "") {
+    finalData = CoinList.filter((element) => {
+      return (
+        element.id.includes(SearchKey) ||
+        element.name.includes(SearchKey) ||
+        element.symbol.includes(SearchKey)
+      );
+    });
+  }
+
+  // render on conditions
+
+  const conditions = () => {
+    if (Error === true) {
+      return (
+        <>
+          <h1 className={styles.warn}>⚠️</h1>
+          <h2 className={styles.errorM}> Something went wrong... </h2>
+        </>
+      );
+    } else if (Loading === true) {
+      return (
+        <span>
+          <FaSpinner className={styles.Loading} id={styles.Loading} />
+        </span>
+      );
+    } else if (finalData.length === 0) {
+      return (
+        <h2 className={styles.noMatch}>
+          ☹️ No Coins Found! <br /> Search for another coin or try again
+          later...... <br />
+        </h2>
+      );
+    }
+  };
+
+  // rendering the map data
 
   const renderCoins = finalData.map((element) => {
     return (
@@ -57,10 +83,12 @@ const HomePage = () => {
     );
   });
 
+  // final return
+
   return (
     <>
       <Navbar />
-     
+      <div>{conditions()}</div>
       <main className={styles.main}>{renderCoins}</main>
     </>
   );
