@@ -1,8 +1,23 @@
 import Navbar from "./NavBar";
 import { Link } from "react-router-dom";
 import styles from "../CSS/HomePage.module.css";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { FetchData } from "../redux/Coins/CoinSlice";
 const HomePage = () => {
-  let coin_id = 'bitcoin';
+  let coin_id = "bitcoin";
+
+  const dispatch = useDispatch();
+  const data = useSelector((state)=>state.Coins);
+  const { CoinList, Loading, Error } = data;
+  // console.log(CoinList);
+  useEffect(() => {
+    if(CoinList.length === 0){
+        dispatch(FetchData());
+    }
+    // console.log('fetchdata');
+  }, [dispatch]);
+
   return (
     <>
       <Navbar />
