@@ -11,6 +11,7 @@ const FetchData = createAsyncThunk("Fetch Data", async () => {
 });
 
 FetchData();
+
 const CoinSlice = createSlice({
   name: Coins,
   initialState: {
@@ -40,3 +41,6 @@ const CoinSlice = createSlice({
     }));
   },
 });
+
+export default CoinSlice.reducer ;
+export {FetchData};
