@@ -10,7 +10,6 @@ const HomePage = () => {
   const dispatch = useDispatch();
   const data = useSelector((state) => state.Coins);
   const SearchKey = useSelector((state) => state.Search.searchkey);
-  console.log(SearchKey);
   const { CoinList, Loading, Error } = data;
 
   let finalData = CoinList;
@@ -73,9 +72,9 @@ const HomePage = () => {
           <div className={styles.box2}>
             <h4 className={styles.name}>{element.name}</h4>
             <h5 className={styles.symbol}>{element.symbol}</h5>
-            <h5 className={styles.price}>{element.current_price}</h5>
+            <h5 className={styles.price}>$ {element.current_price}</h5>
             <h5 className={styles.change}>
-              {element.price_change_percentage_24h}
+             $ {element.price_change_percentage_24h}
             </h5>
           </div>
         </div>

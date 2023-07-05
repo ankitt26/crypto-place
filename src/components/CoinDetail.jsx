@@ -26,45 +26,51 @@ const CoinDetail = () => {
             </tr>
           </thead>
           <tbody>
-             <tr>
+            <tr>
               <td className={styles.td1}>Current Price</td>
-              <td className={styles.td2}>{element.current_price}</td>
+              <td className={styles.td2}>$ {element.current_price}</td>
             </tr>
-             <tr>
-              <td className={styles.td1}>Market Cap</td>
+            <tr>
+              <td className={styles.td1}>Market Rank</td>
               <td className={styles.td2}>{element.market_cap_rank}</td>
             </tr>
-             <tr>
+            <tr>
               <td className={styles.td1}>Total Volume</td>
-              <td className={styles.td2}>{element.total_volume}</td>
+              <td className={styles.td2}>$ {element.total_volume}</td>
             </tr>
-             <tr>
+            <tr>
               <td className={styles.td1}>High 24h</td>
-              <td className={styles.td2}>{element.high_24h}</td>
+              <td className={styles.td2}>$ {element.high_24h}</td>
             </tr>
-             <tr>
+            <tr>
               <td className={styles.td1}>Low 24h</td>
-              <td className={styles.td2}>{element.low_24h}</td>
+              <td className={styles.td2}>$ {element.low_24h}</td>
             </tr>
-             <tr>
+            <tr>
               <td className={styles.td1}>Price Change 24h</td>
-              <td className={styles.td2}>{element.price_change_24h}</td>
+              <td className={styles.td2}>$ {element.price_change_24h}</td>
             </tr>
-             <tr>
+            <tr>
               <td className={styles.td1}>Price Change Percentage 24h</td>
-              <td className={styles.td2}>{element.price_change_percentage_24h} %</td>
+              <td className={styles.td2}>
+                {" "}
+                {element.price_change_percentage_24h} %
+              </td>
             </tr>
-             <tr>
+            <tr>
               <td className={styles.td1}>Market Cap Change 24h</td>
-              <td className={styles.td2}>{element.market_cap_change_24h}</td>
+              <td className={styles.td2}>$ {element.market_cap_change_24h}</td>
             </tr>
-             <tr>
+            <tr>
               <td className={styles.td1}>Market Cap Change Percentage 24h</td>
-              <td className={styles.td2}>{element.market_cap_change_percentage_24h} %</td>
+              <td className={styles.td2}>
+                {" "}
+                {element.market_cap_change_percentage_24h} %
+              </td>
             </tr>
-             <tr>
+            <tr>
               <td className={styles.td1}>Last Updated</td>
-              <td className={styles.td2}>{element.last_updated}</td>
+              <td className={styles.td2}> {element.last_updated}</td>
             </tr>
           </tbody>
         </table>
