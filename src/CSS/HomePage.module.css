@@ -50,3 +50,40 @@
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   color: #fff;
 }
+
+#Loading {
+  transition: transform 1s ease;
+  font-size: 100px;
+  margin-top: 50%;
+  color: rgb(96, 141, 210);
+}
+
+.warn {
+  font-size: 70px;
+  margin-bottom: -10px;
+}
+
+.errorM {
+  font-size: 25px;
+  font-family: "Lato", sans-serif;
+}
+
+.Loading {
+  animation: rotateAnimation 2s linear infinite;
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.noMatch {
+  font-family: "Lato", sans-serif;
+  color: rgb(234, 93, 130);
+  max-width: 100%;
+}
