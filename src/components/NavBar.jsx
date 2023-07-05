@@ -1,12 +1,30 @@
-import styles from "../CSS/NavBar.module.css";
+import { useState } from 'react';
 import { ImSearch } from "react-icons/im";
+import { useDispatch } from 'react-redux';
+import styles from "../CSS/NavBar.module.css";
+
+
 const Navbar = () => {
+const dispatch = useDispatch();
+  const [ input, setinput ] = useState('');
+
+  const onchange = (event)=> {
+    setinput(event.target.value)
+    event.preventDefault();
+  }
+
+  const onsubmit = (event) => {
+    dispatch(searchCoin(input));
+    event.preventDefault();
+    console.log(input)
+    setinput('');
+
+  };
   return (
     <nav className={styles.nav}>
       <h2 className={styles.h2}>CryptoPlace</h2>
-
-      <form className={styles.form} onSubmit={() => console.log("clicked")}>
-        <input className={styles.input} placeholder="   search"></input>
+      <form className={styles.form} onSubmit={onsubmit}>
+        <input className={styles.input} placeholder="   search" value={input} onChange={onchange}></input>
         <button type="submit" className={styles.btn}>
           <ImSearch className={styles.search} />
         </button>
