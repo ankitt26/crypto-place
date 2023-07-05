@@ -13,7 +13,7 @@ const FetchData = createAsyncThunk("Fetch Data", async () => {
 FetchData();
 
 const CoinSlice = createSlice({
-  name: Coins,
+  name: 'Coins',
   initialState: {
     CoinList: [],
     Loading: true,
