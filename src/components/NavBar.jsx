@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { ImSearch } from "react-icons/im";
 import { useDispatch } from 'react-redux';
 import styles from "../CSS/NavBar.module.css";
-
+import { setSearchKey } from '../redux/Coins/SearchSlice';
 
 const Navbar = () => {
 const dispatch = useDispatch();
@@ -14,7 +14,7 @@ const dispatch = useDispatch();
   }
 
   const onsubmit = (event) => {
-    dispatch(searchCoin(input));
+    dispatch(setSearchKey(input));
     event.preventDefault();
     console.log(input)
     setinput('');
