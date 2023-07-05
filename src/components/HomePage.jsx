@@ -19,7 +19,7 @@ const HomePage = () => {
   }, [dispatch]);
 
   const renderCoins = CoinList.map(element => {
-    console.log(element.id);
+    // console.log(element.id);
     return(
       <Link className={styles.card} to={`/coin/${element.id}`} key={element.id}>
       <img
