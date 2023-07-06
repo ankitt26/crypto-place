@@ -27,14 +27,14 @@ After you're finished please remove all the comments and instructions!
 
 <div align="center">
   <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="https://static.vecteezy.com/system/resources/previews/008/040/410/original/school-logo-design-template-free-vector.jpg" alt="logo" width="80"  height="auto" />
-  <h2>Nextview</h2>
-  <br/>
+  <!-- <img src="https://static.vecteezy.com/system/resources/previews/008/040/410/original/school-logo-design-template-free-vector.jpg" alt="logo" width="80"  height="auto" /> -->
+  <h2>Crypto-place</h2>
+  <hr>
+ 
 
-  <h3><b> Crypto-Place</b></h3>
-
+ 
 </div>
-
+ 
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -44,6 +44,7 @@ After you're finished please remove all the comments and instructions!
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+  - [�️ Presentation ](#️-presentation-)
   - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
@@ -97,6 +98,12 @@ After you're finished please remove all the comments and instructions!
 - User can see the price of any crypto coin.
 - user can search for a specific coin.
 - Live data of cryotocurrency.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 📽️ Presentation <a name="live-demo"></a>
+
+> [📷 see video ](https://www.loom.com/share/f45126bca28846e0a5645fbe7a3de0f7?sid=a259c4c7-5821-44c7-9520-5dbc7efd17a6)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -185,6 +192,7 @@ $ npm start
 
 ## 🔭 Future Features <a name="future-features"></a>
 
+- Add styling for desktop using `@media-query`.
 - Show live graph 
 - buying tips guide 
 
@@ -211,8 +219,7 @@ If you like this project give it a star.
 <!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
-
-I would like to thanks microverse .
+I would like to extend my sincere thanks and credit to Nelson Sakwa (https://www.behance.net/sakwadesignstudio) for the inspiring design that served as the foundation for the creation of the Crypto-place app.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
