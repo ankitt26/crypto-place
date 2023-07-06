@@ -10,7 +10,7 @@ const App = () => (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/coin/:coin_id/" element={<CoinDetail />} />
+        <Route path="/coin/:coinId/" element={<CoinDetail />} />
       </Routes>
     </BrowserRouter>
   </Provider>
