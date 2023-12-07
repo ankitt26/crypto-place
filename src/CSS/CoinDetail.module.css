@@ -57,7 +57,7 @@ td {
 }
 
 .thead {
-  font-size: 18px;
+  font-size: 24px;
   font-weight: bolder;
 }
 
@@ -99,4 +99,14 @@ td {
 .price {
   color: #cdcdcd;
   font-size: 17px;
+}
+
+@media only screen and (min-width: 800px) {
+  .img {
+    width: 100px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
 }
